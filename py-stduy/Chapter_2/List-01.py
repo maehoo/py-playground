@@ -71,5 +71,5 @@ result = a2*3
 print(result)       # [1, 2, 3, 1, 2, 3, 1, 2, 3]
 
 a2 = [1,2,3]
-result = str(a[2]) + "hi"   # 자료형 일치 중요 2는 int 이므로 str로 문자열로 바꿔준다
-print(result)
+result = str(a2[2]) + "hi"   # 자료형 일치 중요 2는 int 이므로 str로 문자열로 바꿔준다
+print(result)       # 3hi
