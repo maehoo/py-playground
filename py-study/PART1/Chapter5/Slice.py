@@ -1,13 +1,13 @@
 #문자 추출: []
 letters = 'abcdefghijklmnopqrstuvwxyz'
 print(letters[0])
-'''>>>a'''
+'''>>> a'''
 print(letters[1])
-'''>>>b'''
+'''>>> b'''
 print(letters[-1])
-'''>>>z'''
+'''>>> z'''
 print(letters[-2])
-'''>>>y'''
+'''>>> y'''
 
 
 #슬라이스
@@ -16,11 +16,11 @@ name = 'Henny'
 #문자열은 불변하기 때문에 특정 인덱스에 문자를 삽입하거나 변경할 수 없다. 
 
 print(name.replace('H','P'))
-'''>>>Penny'''
+'''>>> Penny'''
 print('P' + name[1:])
-'''>>>Penny'''
+'''>>> Penny'''
 print(name)
-'''>>>Henny'''
+'''>>> Henny'''
 #name의 문자열을 바꾸는 것이 아닌 출력과정에서만 바꿔서 출력하는 것 뿐이다.
 
 #슬라이스를 사용하여 한 문자열에서 문자열 일부를 추출할 수 잇다.
@@ -33,35 +33,35 @@ print(name)
 """
 
 print(letters[:])
-'''>>>abcdefghijklmnopqrstuvwxyz'''
+'''>>> abcdefghijklmnopqrstuvwxyz'''
 print(letters[20:])
-'''>>>uvwxyz'''
+'''>>> uvwxyz'''
 print(letters[10:])
-'''>>>klmnopqrstuvwxyz'''
+'''>>> klmnopqrstuvwxyz'''
 print(letters[12:15])
-'''>>>mno'''
+'''>>> mno'''
 print(letters[-3:])
-'''>>>xyz'''
+'''>>> xyz'''
 print(letters[18:-3])
-'''>>>stuvw'''
+'''>>> stuvw'''
 #앞의 예제처럼 시작 오프셋에 -3을 지정하면 x가 되지만, 끝 오프셋에 -3을 지정하면 -4번째 문자인 w가 된다.
 print(letters[-6:-2])
-'''>>>uvwx'''
+'''>>> uvwx'''
 print(letters[::7])
-'''>>>ahov'''
+'''>>> ahov'''
 print(letters[4:20:3])
-'''>>>ehknqt'''
+'''>>> ehknqt'''
 print(letters[19::4])
-'''>>>tx'''
+'''>>> tx'''
 print(letters[:21:5])
-'''>>>afkpu'''
+'''>>> afkpu'''
 
 #스텝을 음수로 지정하면 역순으로 출력도 가능하다.
 print(letters[-1::-1])
 print(letters[::-1])
-'''>>>zyxwvutsrqponmlkjihgfedcba'''
+'''>>> zyxwvutsrqponmlkjihgfedcba'''
 
 #슬라이스는 첫 번째 문자열 이전의 슬라이스오프셋은 0으로 간주하고, 마지막 다음 오프셋은 -1로 간주한다.
 print(letters[-50:])
 print(letters[:70])
-'''>>>abcdefghijklmnopqrstuvwxyz'''
+'''>>> abcdefghijklmnopqrstuvwxyz'''
