@@ -16,8 +16,6 @@ dictt = {'thing' : 'duck', 'place' : 'bathtub'}
 print('The {0[thing]} is in the {0[place]}'.format(dictt))
 '''>>> The duck is in the bathtub'''
 
-
-
 #문자열 정의
 '''
 1. 맨 처음 콜론(:)이 온다.
@@ -28,6 +26,11 @@ print('The {0[thing]} is in the {0[place]}'.format(dictt))
 6. 최대 문자(옵션)
 7. 변환 타입
 '''
+#4번 추가내용 포맷 사양에서 부호(sign) 옵션은 숫자(int, float) 출력 시만 의미가 있다. 문자열에서는 적용되지 않는다.
+print(f'{42:-}')
+'''>>> 42'''
+#4번 내용은 문자열 정의에서 필요없는 내용과 가깝다.
+
 thing2 = 'wraith'
 place2 = 'window'
 print('The {} is at the {}'.format(thing2,place2))
